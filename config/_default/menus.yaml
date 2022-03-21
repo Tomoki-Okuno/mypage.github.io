@@ -21,7 +21,7 @@ main:
   #   weight: 50
   - name: Maths
     url: '#maths'
-    weight: 30
+    weight: 40
   # - name: Contact
   #   url: '#contact'
   #   weight: 60
