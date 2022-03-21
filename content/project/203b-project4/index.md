@@ -25,7 +25,7 @@ links:
 #   icon_pack: fab
 #   name: Follow
 #   url: https://twitter.com/georgecushen
-url_code: "/files/projects/203b-project4/hw4sol.html"
+url_code: "/files/projects/203b-project4.html"
 url_html: ""
 url_slides: ""
 url_video: ""

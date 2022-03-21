@@ -23,7 +23,7 @@ links:
 #   name: Follow
 #   url: https://twitter.com/georgecushen
 url_code: ""
-url_pdf: "files/projects/203a-project2/203a_Prj2.pdf"
+url_pdf: "/files/projects/203b-project2.pdf"
 url_slides: ""
 url_video: ""
 
