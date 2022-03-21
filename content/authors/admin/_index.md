@@ -14,7 +14,7 @@ organizations:
   url: https://biostat.ucla.edu/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include longevity, or extending healthy lifespan by slowing, stopping, and even reversing the aging process.
+bio: My research interests include longevity, that is, extending healthy lifespan by slowing, stopping, and even reversing the aging process.
 
 # Interests to show in About widget
 interests:
