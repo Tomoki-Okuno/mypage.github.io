@@ -1,11 +1,14 @@
 ---
-title: Biostatistics 203B Project 1
-summary: Git/GitHub handling and Linux scripting
+title: Biostatistics 203B Project 4
+summary: Imputation methos and Deep learning
 tags:
-- GitHub
-- Linux
+- imputation method
+- logistic regression
+- deep learning (keras)
+- random forest
+- neural network
 - R
-date: "2022-1-20"
+date: "2022-3-18"
 
 # Activate this widget? true/false
 active: false
@@ -22,7 +25,7 @@ links:
 #   icon_pack: fab
 #   name: Follow
 #   url: https://twitter.com/georgecushen
-url_code: "/project/203b-project1/hw1sol.html"
+url_code: "/project/203b-project4/hw4sol.html"
 url_html: ""
 url_slides: ""
 url_video: ""
@@ -34,6 +37,6 @@ url_video: ""
 #   Otherwise, set `slides = ""`.
 # slides: example
 ---
-This project was the assignment 1 for Biostatistics 203B: Introduction to Data Science in Winter Quarter 2022.
+This project was the final assignment for Biostatistics 203B: Introduction to Data Science in Winter Quarter 2022.
 
-The topics were related to Linux scripting and Git/GitHub handling.
+The topics were related to imputation methods and prediction approaches, such as the logistic regression (`glm()`), logistic regression with lasso penalty (glmnet), random forest, and neural network using keras.

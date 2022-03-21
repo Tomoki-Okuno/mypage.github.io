@@ -1,11 +1,11 @@
 ---
-title: Biostatistics 203B Project 1
-summary: Git/GitHub handling and Linux scripting
+title: Biostatistics 203B Project 2
+summary: Tidyverse and Data visualization (ggplot2)
 tags:
-- GitHub
-- Linux
+- tidyverse
+- ggplot2
 - R
-date: "2022-1-20"
+date: "2022-2-6"
 
 # Activate this widget? true/false
 active: false
@@ -22,7 +22,7 @@ links:
 #   icon_pack: fab
 #   name: Follow
 #   url: https://twitter.com/georgecushen
-url_code: "/project/203b-project1/hw1sol.html"
+url_code: "/project/203b-project2/hw2sol.html"
 url_html: ""
 url_slides: ""
 url_video: ""
@@ -34,6 +34,6 @@ url_video: ""
 #   Otherwise, set `slides = ""`.
 # slides: example
 ---
-This project was the assignment 1 for Biostatistics 203B: Introduction to Data Science in Winter Quarter 2022.
+This project was the assignment 2 for Biostatistics 203B: Introduction to Data Science in Winter Quarter 2022.
 
-The topics were related to Linux scripting and Git/GitHub handling.
+The topics were related to Tidyverse and Data visualization using ggplot2.
