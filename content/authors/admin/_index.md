@@ -1,39 +1,39 @@
 ---
 # Display name
-title: Nelson Bighetti
+title: Tomoki Okuno
 
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position/tagline
-role: Professor of Artificial Intelligence
+role: MS student in Biostatistics
 
 # Organizations/Affiliations to show in About widget
 organizations:
-- name: Stanford University
-  url: https://www.stanford.edu/
+- name: University of California, Los Angeles
+  url: https://biostat.ucla.edu/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: My research interests include longevity, or extending healthy lifespan by slowing, stopping, and even reversing the aging process.
 
 # Interests to show in About widget
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+- Longevity
+- Machine Learning
+- Causal Inference
 
 # Education to show in About widget
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
+  - course: MS in Biostatistics
+    institution: University of California, Los Angeles
+    year: 2021−Present
+  - course: MS in Informatics
+    institution: Kyoto University, Japan
+    year: 2011−2013
+  - course: BE in Informatics
+    institution: Kyoto University, Japan
+    year: 2007−2011
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
