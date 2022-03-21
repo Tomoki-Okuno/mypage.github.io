@@ -3,7 +3,7 @@
 title: Tomoki Okuno
 
 # Is this the primary user of the site?
-superuser: true
+superuser: false
 
 # Role/position/tagline
 role: MS student in Biostatistics
