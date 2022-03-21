@@ -2,8 +2,10 @@
 title: Mathematical Statistics
 summary: Solutions for problems
 tags:
-- hogehoge
-date: "2021-12-17"
+- probability
+- distributions
+- statistics
+date: "2022-3-21"
 
 # Activate this widget? true/false
 active: false
@@ -20,7 +22,7 @@ links:
 #   icon_pack: fab
 #   name: Follow
 #   url: https://twitter.com/georgecushen
-url_document: "/math/math1.html"
+url_code: "/math/math1.html"
 url_pdf: ""
 url_slides: ""
 url_video: ""
@@ -32,4 +34,4 @@ url_video: ""
 #   Otherwise, set `slides = ""`.
 # slides: example
 ---
-Xxx
+There were solutions in the text book called 'Introduction to Mathematical Statistics'. I worked on some of them for class Biostatistics 202A: Mathematical Statistics. The reason why I share my solutions is that not all answers are available publicly and some of the answers are often incorrect or unwise.
