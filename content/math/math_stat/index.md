@@ -20,8 +20,8 @@ links:
 #   icon_pack: fab
 #   name: Follow
 #   url: https://twitter.com/georgecushen
-url_code: ""
-url_pdf: "/project/203a-project2/203a_Prj2.pdf"
+url_document: "/math/math1.html"
+url_pdf: ""
 url_slides: ""
 url_video: ""
 
