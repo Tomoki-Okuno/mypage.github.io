@@ -25,6 +25,7 @@ main:
   # - name: Contact
   #   url: '#contact'
   #   weight: 60
+
  - name: CV
-   url: 'files/resume/Tomoki_CV.pdf'
-   weight: 50
+   url: '#contact'
+   weight: 60
