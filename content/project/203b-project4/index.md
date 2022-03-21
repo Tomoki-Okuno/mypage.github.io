@@ -1,6 +1,6 @@
 ---
 title: Biostatistics 203B Project 4
-summary: Imputation methos and Deep learning
+summary: Imputation methods and Deep learning
 tags:
 - imputation method
 - logistic regression
