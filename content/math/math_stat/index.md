@@ -1,6 +1,6 @@
 ---
 title: Mathematical Statistics
-summary: Solutions to problems
+summary: Solutions to practice problems
 tags:
 - probability
 - distributions
