@@ -1,10 +1,11 @@
 ---
-title: Biostatistics 203A Final Project
-summary: What factors cause the difference in life expectancy among states.
+title: Biostatistics 203B Project 1
+summary: Git/GitHub handling and Linux scripting
 tags:
-- Principal Component Analysis
-- K-means clustering,
-date: "2021-12-17"
+- GitHub
+- Linux
+- R
+date: "2022-1-20"
 
 # Activate this widget? true/false
 active: false
@@ -22,7 +23,7 @@ links:
 #   name: Follow
 #   url: https://twitter.com/georgecushen
 url_code: ""
-url_pdf: "files/projects/BIostat203_Proj2.pdf"
+url_html: "/project/203b-project1/hw1sol.html"
 url_slides: ""
 url_video: ""
 
@@ -33,5 +34,6 @@ url_video: ""
 #   Otherwise, set `slides = ""`.
 # slides: example
 ---
+This project is the assignment 1 for Biostatistics 203B: Introduction to Data Science in Winter Quarter 2022.
 
-
+The topics are related to Linux scripting and Git/GitHub handling.

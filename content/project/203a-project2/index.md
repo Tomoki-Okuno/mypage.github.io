@@ -3,7 +3,8 @@ title: Biostatistics 203A Final Project
 summary: What factors cause the difference in life expectancy among states.
 tags:
 - Principal Component Analysis
-- K-means clustering,
+- K-means clustering
+- R
 date: "2021-12-17"
 
 # Activate this widget? true/false
@@ -22,7 +23,7 @@ links:
 #   name: Follow
 #   url: https://twitter.com/georgecushen
 url_code: ""
-url_pdf: "/project/203a-project2/Biostat203_Proj2.pdf"
+url_pdf: "/project/203a-project2/203a_Prj2.pdf"
 url_slides: ""
 url_video: ""
 
@@ -33,7 +34,7 @@ url_video: ""
 #   Otherwise, set `slides = ""`.
 # slides: example
 ---
-This project is the final project for Biostatistics 203A: Introduction to Data Management and Statistical Computing in Fall Quarter 2021.
+This project is the final assignment for Biostatistics 203A: Introduction to Data Management and Statistical Computing in Fall Quarter 2021.
 
 No specific topic was assigned and students were expected to employ computational methods in R they learned in class, such as, statistical testing, modeling, or clustering, to health-related data sets of our own interest to reach some conclusion. Students were also responsible for preparing and organizing a written report containing tables, figures, and a text summary of methods and results.
 

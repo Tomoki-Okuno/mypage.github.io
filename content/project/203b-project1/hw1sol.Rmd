@@ -1,0 +1,267 @@
+---
+title: "Biostat 203B Homework 1"
+author: Tomoki Okuno
+subtitle: Due Jan 21 @ 11:59PM
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Display machine information for reproducibility:
+```{r, eval=T}
+sessionInfo()
+```
+
+## Q1. Git/GitHub
+
+1. Apply for the [Student Developer Pack](https://education.github.com/pack) at GitHub using your UCLA email. You'll get GitHub Pro account for free (unlimited public and private repositories).  
+**Done.**
+
+2. Create a private repository `biostat-203b-2022-winter` and add `Hua-Zhou` and `maschepps` as your collaborators with write permission.  
+**Done.**
+
+3. Top directories of the repository should be `hw1`, `hw2`, ... Maintain two branches `main` and `develop`. The `develop` branch will be your main playground, the place where you develop solution (code) to homework problems and write up report. The `main` branch will be your presentation area. Submit your homework files (R markdown file `Rmd`, `html` file converted from R markdown, all code and extra data sets to reproduce results) in `main` branch.  
+**Done and understood.**
+
+4. After each homework due date, teaching assistant and instructor will check out your main branch for grading. Tag each of your homework submissions with tag names `hw1`, `hw2`, ... Tagging time will be used as your submission time. That means if you tag your `hw1` submission after deadline, penalty points will be deducted for late submission.  
+**Done.**
+
+5. After this course, you can make this repository public and use it to demonstrate your skill sets on job market.  
+**Great!**
+
+## Q2. Data ethics training
+This exercise (and later in this course) uses the [MIMIC-IV data](https://mimic-iv.mit.edu), a freely accessible critical care database developed by the MIT Lab for Computational Physiology. Follow the instructions at <https://mimic.mit.edu/docs/gettingstarted/> to (1) complete the CITI `Data or Specimens Only Research` course and (2) obtain the PhysioNet credential for using the MIMIC-IV data. Display the verification links to your completion report and completion certificate here. (Hint: The CITI training takes a couple hours and the PhysioNet credentialing takes a couple days; do not leave it to the last minute.)
+
+**Solution:**
+
+- My completion report  
+https://www.citiprogram.org/verify/?kf7337c50-ab63-4a0b-b730-f94965ea93e0-46526237
+
+- My completion certificate  
+https://www.citiprogram.org/verify/?w5ed2f46d-5069-4c33-ad06-a8e12eeb07c0-46526237
+
+## Q3. Linux Shell Commands
+
+1. The `/mnt/mimiciv/1.0` folder on teaching server contains data sets from MIMIC-IV. Refer to the documentation <https://mimic.mit.edu/docs/iv/> for details of data files.
+    ```{bash}
+    ls -l /mnt/mimiciv/1.0
+    ```
+Please, do not put these data files into Git; they are big. Do not copy them into your directory. Do not decompress the gz data files. These create unnecessary big files on storage and are not big data friendly practices. Just read from the data folder /mnt/mimiciv/1.0 directly in following exercises.  
+**Sure.**
+
+    Use Bash commands to answer following questions.
+
+2. Display the contents in the folders `core`, `hosp`, `icu`.  
+**Solution:** Here is the code to display them.
+    ```{bash}
+    ls -l /mnt/mimiciv/1.0/core/
+    ls -l /mnt/mimiciv/1.0/hosp/
+    ls -l /mnt/mimiciv/1.0/icu/
+    ```
+Why are these data files distributed as `.csv.gz` files instead of `.csv` (comma separated values) files?   
+    **Solution:** `.csv.gz` files are a compressed form of `.csv` files. Compressing a large file can reduce the file size, allowing us to store more files on storage and transmit them more speedy over the internet than `.csv` files.  
+    
+    Read the page <https://mimic.mit.edu/docs/iv/> to understand what's in each folder.  
+    **Done.**
+
+3. Briefly describe what bash commands `zcat`, `zless`, `zmore`, and `zgrep` do.
+
+    **Solution:** What these five commands have in common is to display a compressed file without decompressing it.  
+    `zcat`, `zless`, `zmore`, and `zgrep` can perform the equivalent of `cat`, `less`, `more`, and `grep`, respectively.  
+    
+4. What's the output of following bash script?
+    ```{bash eval=F}
+    for datafile in /mnt/mimiciv/1.0/core/*.gz
+      do
+        ls -l $datafile
+      done
+    ```
+**Solution:** The output is a list of all the compressed (`.gz`) files in `/mnt/mimiciv/1.0/core/` in a long format.  
+**Comment:** By the way, the following code gives almost the same output.
+    ```{bash eval=T}
+    ls -l /mnt/mimiciv/1.0/core/ | grep '.gz'
+    ```
+Display the number of lines in each data file using a similar loop.  
+**Solution:** I used `echo` to clarify the file name and counted the number of lines as follows.
+    ```{bash} 
+    for datafile in /mnt/mimiciv/1.0/core/*.gz
+      do
+      echo $datafile
+      zcat $datafile | wc -l
+      done
+    ```
+
+5. Display the first few lines of `admissions.csv.gz`.  
+**Solution:**
+    ```{bash} 
+    zcat /mnt/mimiciv/1.0/core/admissions.csv.gz | head -4
+    ```
+How many rows are in this data file?  
+**Solution:** The following code ignores the 1st line and gives the answer.
+    ```{bash} 
+    zcat /mnt/mimiciv/1.0/core/admissions.csv.gz | tail -n +2 | wc -l
+    ```
+How many unique patients (identified by `subject_id`) are in this data file?  
+**Solution:** I offer two answers as follows.
+    ```{bash} 
+    zcat /mnt/mimiciv/1.0/core/admissions.csv.gz | \
+      tail -n +2 | sort | uniq -f 0 -w 8 | wc -l
+    zcat /mnt/mimiciv/1.0/core/admissions.csv.gz | \
+      awk -F "," 'NR > 1 {print $1 | "sort | uniq"}' | wc -l
+    ```
+
+6. What are the possible values taken by each of the variable `admission_type`, `admission_location`, `insurance`, and `ethnicity`? Also report the count for each unique value of these variables.  
+**Solution:** Here are the codes and the answers.
+    ```{bash} 
+    zcat /mnt/mimiciv/1.0/core/admissions.csv.gz | \
+      awk -F "," 'NR == 1 {print $6}; NR > 1 {print $6 | "sort | uniq -c"}'
+    ```
+    ```{bash} 
+    zcat /mnt/mimiciv/1.0/core/admissions.csv.gz | \
+      awk -F "," 'NR == 1 {print $7}; NR > 1 {print $7 | "sort | uniq -c"}'
+    ```
+    ```{bash} 
+    zcat /mnt/mimiciv/1.0/core/admissions.csv.gz | \
+      awk -F "," 'NR == 1 {print $9}; NR > 1 {print $9 | "sort | uniq -c"}'
+    ```
+    ```{bash} 
+    zcat /mnt/mimiciv/1.0/core/admissions.csv.gz | \
+      awk -F "," 'NR == 1 {print $12}; NR > 1 {print $12 | "sort | uniq -c"}'
+    ```
+
+## Q4. Who's popular in Price and Prejudice
+
+1. You and your friend just have finished reading *Pride and Prejudice* by Jane Austen. Among the four main characters in the book, Elizabeth, Jane, Lydia, and Darcy, your friend thinks that Darcy was the most mentioned. You, however, are certain it was Elizabeth. Obtain the full text of the novel from <http://www.gutenberg.org/cache/epub/42671/pg42671.txt> and save to your local folder. 
+    ```{bash, eval=FALSE}
+    wget -nc http://www.gutenberg.org/cache/epub/42671/pg42671.txt
+    ```
+**Done.**
+
+    Explain what `wget -nc` does.  
+    **Solution:** `wget` is a command that not only downloads source code and binaries, but also allows you to retrieve an entire website or a specific hierarchy at once. `-nc` option indicates that a file is not retrieved again if the file has already been downloaded.
+    
+    Complete the following loop to tabulate the number of times each of the four characters is mentioned using Linux commands.  
+    **Solution:** Using `-o` option, it is possible to count the words containing each name instead of just counting the lines shown below. Moreover, If using `-i` option to ignore the difference between uppercase and lowercase letters, I got one more time for Lydia and Darcy as follows.
+    ```{bash}
+    # wget -nc http://www.gutenberg.org/cache/epub/42671/pg42671.txt
+    for char in Elizabeth Jane Lydia Darcy
+    do
+      echo $char:
+      cat pg42671.txt | grep -o $char | wc -l
+      cat pg42671.txt | grep -o -i $char | wc -l 
+    done
+    ```
+
+2. What's the difference between the following two commands?
+    ```{bash eval=FALSE}
+    echo 'hello, world' > test1.txt
+    ```
+    and
+    ```{bash eval=FALSE}
+    echo 'hello, world' >> test2.txt
+    ```
+**Solution:** The difference between them is that `>` opens a file in overwrite mode, while `>>` opens a file in append mode. In other words, the first command will always input only one line of `hello world` no matter how many times it is run, while the second command increases in line the more times you run it.
+
+3. Using your favorite text editor (e.g., `vi`), type the following and save the file as `middle.sh`:
+    ```{bash eval=FALSE}
+    #!/bin/sh
+    # Select lines from the middle of a file.
+    # Usage: bash middle.sh filename end_line num_lines
+    head -n "$2" "$1" | tail -n "$3"
+    ```
+**Solution:** I used `vi` and put the file into Git.
+
+    Using `chmod` make the file executable by the owner, and run  
+    ```{bash eval=T}
+    chmod 700 ./middle.sh
+    ./middle.sh pg42671.txt 20 5
+    ```
+**Solution:** I added a command as above and ran it.
+
+    Explain the output.  
+**Solution:** The output is the print from the 16th line to the 20th line in `pg42671.txt`.
+
+    Explain the meaning of `"$1"`, `"$2"`, and `"$3"` in this shell script.  
+**Solution:** The following code gives the same output:
+    ```{bash eval=F}
+    head -20 pg42671.txt | tail -5
+    ```
+which implies that `"$1"`=`pg42671.txt`, `"$2"`=`20`, and `"$3"`=`5`, that is, the column numbers next to `./middle.sh` in the second line of the shell script.
+
+    Why do we need the first line of the shell script?  
+**Solution:** To identify the shell (bash/csh/tcsh/zsh, etc) to execute.
+
+## Q5. More fun with Linux
+
+- Try following commands in Bash and interpret the results: `cal`, `cal 2021`, `cal 9 1752` (anything unusual?), `date`, `hostname`, `arch`, `uname -a`, `uptime`, `who am i`, `who`, `w`, `id`, `last | head`, `echo {con,pre}{sent,fer}{s,ed}`, `time sleep 5`, `history | tail`.
+    ```{bash}
+    cal
+    cal 2021
+    cal 9 1752
+    date
+    ```
+**Solution:**
+    - `cal` is a command to display the calendar for the current month, but you can also specify the year (e.g.,`cal 2021`) or the year and month (e.g., `cal 9 1752`) to display.  
+    Note that, for `cal 9 1752`, since the British Empire switched from the Julian calendar to the Gregorian calendar, **there are no records from September 3 to 13 for 1752**, which is reflected in the command.
+    - `date` displays the current date and time in UTC.
+
+    ```{bash}
+    hostname
+    arch
+    uname -a
+    uptime
+    ```
+    - `hostname` displays the hostname of the server you are currently logged in.
+    - `arch` displays the architecture (hardware name) of the Linux machine you are using.
+    - `uname -a` displays all information on your system such as machine, hostname, and architecture name.
+    - `uptime` displays the running time, the number of users, and the average system load on Linux.
+
+    ```{bash}
+    who am i
+    # Output on my local terminal below
+    ## tomokiokuno ttys000  Jan 10 15:27 
+    ```
+    ```{bash}
+    who
+    ```
+    ```{bash}
+    w
+    ```
+    ```{bash}
+    id
+    ```
+    ```{bash}
+    last | head
+    ```
+    - `who am i` displays information about the current terminal, such as username, console, and log-in time. However, the output is not displayed on a teaching server probably because the process is ongoing.
+    - `who` displays the status of the users who are currently logged in.
+    - `w` displays the processes running by the logged-in user and the CPU time used at the same time.
+    - `id` displays identification information such as user ID, user name, group ID.
+    - `last | head` displays a list of the last ten logged-in users in the newest order.
+    
+    ```{bash}
+    echo {con,pre}{sent,fer}{s,ed}
+    ```
+    ```{bash}
+    time sleep 5
+    ```
+    - `echo {con,pre}{sent,fer}{s,ed}` displays all texts formed by $2^3=8$ combinations.
+    - `sleep 5` stops the shell for five seconds and `time` is a command to measure execute time of a command. Hence,`time sleep 5` is a command to check that the shell has been stopped for five seconds. 
+    
+    ```{bash}
+    history | tail
+    # Outputs on my terminal below
+    ## 503  arch
+    ## 504  uname -a
+    ## 505  uptime
+    ## 506  who am i
+    ## 507  who
+    ## 508  w
+    ## 509  id
+    ## 510  last | head
+    ## 511  time sleep 5
+    ## 512  history | tail
+    ```
+    - `history | tail` displays the last 10 commands in order from oldest to newest.
