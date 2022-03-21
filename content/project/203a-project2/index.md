@@ -35,6 +35,6 @@ url_video: ""
 ---
 This project is the final project for Biostatistics 203A: Introduction to Data Management and Statistical Computing in Fall Quarter 2021.
 
-No specific topic was given, and students were expected to employ computational methods in R they learned in class, such as, statistical testing, modeling, or clustering, to health-related data sets of our own interest to reach some conclusion. Students also were responsible for preparing and organizing a written report containing tables, figures, and a text summary of methods and results.
+No specific topic was assigned and students were expected to employ computational methods in R they learned in class, such as, statistical testing, modeling, or clustering, to health-related data sets of our own interest to reach some conclusion. Students were also responsible for preparing and organizing a written report containing tables, figures, and a text summary of methods and results.
 
-My topic was focused on the disparity in life expectancy among states in the U.S. What factors are associated with this difference was examined using Principal Component Analysis and a clustering algorithms.
+My topic focused on the disparity in life expectancy among states in the U.S. Principal component analysis and a clustering algorithm were used to examine what factors might affect this difference.
