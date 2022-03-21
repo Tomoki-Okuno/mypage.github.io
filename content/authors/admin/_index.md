@@ -68,6 +68,8 @@ email: "tomokiokuno0528@g.ucla.edu"
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
+
+# {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé (TBD){{< /staticref >}}.
 ---
 
 I'm Tomoki Okuno. I am a MS Biostatistics student at UCLA and a graduate student researcher at David Geffen School of Medicine at UCLA working with Dr.Jin Zhou and Dr.Hua Zhou. My main interest is Longevity: extending healthy lifespan by slowing, stopping, and even reversing the aging process. My short-term goal to transfer into a PhD student and conduct research related to aging. My long-term goal is to contribute to realizing an extended healthy lifespan in Japan as both researcher and business practitioner.
