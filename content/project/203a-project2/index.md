@@ -1,5 +1,5 @@
 ---
-title: Biostat203A Final Project
+title: Biostatistics 203A Final Project
 summary: What factors cause the difference in life expectancy among states.
 tags:
 - Principal Component Analysis
@@ -17,12 +17,12 @@ image:
   focal_point: Smart
 
 links:
-- icon: twitter
-  icon_pack: fab
-  name: Follow
-  url: https://twitter.com/georgecushen
+# - icon: twitter
+#   icon_pack: fab
+#   name: Follow
+#   url: https://twitter.com/georgecushen
 url_code: ""
-url_pdf: ""
+url_pdf: "/files/projects/BIostat203_Proj2.pdf"
 url_slides: ""
 url_video: ""
 
