@@ -1,6 +1,6 @@
 ---
 title: Mathematical Statistics
-summary: Solutions for problems
+summary: Solutions to problems
 tags:
 - probability
 - distributions
@@ -34,4 +34,4 @@ url_video: ""
 #   Otherwise, set `slides = ""`.
 # slides: example
 ---
-There were solutions in the text book called 'Introduction to Mathematical Statistics'. I worked on some of them in class Biostatistics 202A: Mathematical Statistics. The reason why I share my solutions is that not all answers are available publicly and some of the answers are often incorrect or unwise.
+There were my solutions to some of the problems in the text book called 'Introduction to Mathematical Statistics'. I worked on some of them in class Biostatistics 202A: Mathematical Statistics. The reason why I share my solutions is that not all answers are available publicly and some of the answers are often incorrect or unwise.
