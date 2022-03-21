@@ -19,7 +19,7 @@ main:
   # - name: Publications
   #   url: '#featured'
   #   weight: 50
-  - name: Maths
+  - name: Math
     url: '#maths'
     weight: 40
   # - name: Contact
