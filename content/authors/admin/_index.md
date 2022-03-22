@@ -75,7 +75,7 @@ highlight_name: true
 # {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé (TBD){{< /staticref >}}.
 ---
 
-I'm Tomoki Okuno. I am a MS Biostatistics student at UCLA and a graduate student researcher at David Geffen School of Medicine at UCLA working with Dr.Jin Zhou and Dr.Hua Zhou. My main interest is longevity―how do we age, and can we slow, stop, or even reverse the aging process? My short-term goal is to transfer into a PhD program next year and conduct research related to aging. My long-term goal is to contribute to realizing an extended healthy lifespan in Japan, both as a biostatistician and a business developer.
+I'm Tomoki Okuno. I am a MS Biostatistics student at UCLA and a graduate student researcher at David Geffen School of Medicine at UCLA working with Dr.Jin Zhou and Dr.Hua Zhou. My main interest is longevity―how do we age and can we slow, stop, or even reverse the aging process? My short-term goal is to transfer into a PhD program next year and conduct research related to aging. My long-term goal is to contribute to realizing an extended healthy lifespan in Japan, both as a biostatistician and a business developer.
 
 In addition to my academic pursuits, I am into keeping fit in order to live up to 150 years old.
 
