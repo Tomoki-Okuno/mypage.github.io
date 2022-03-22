@@ -79,4 +79,4 @@ I'm Tomoki Okuno. I am a MS Biostatistics student at UCLA and a graduate student
 
 In addition to my academic pursuits, I am into keeping fit in order to live up to 150 years old.
 
-This picture was drawn by my wife, illustrator (her [instagram](https://www.instagram.com/satoko_artwork/)).
+This picture was drawn by my wife, an illustrator (her [instagram](https://www.instagram.com/satoko_artwork/)).
