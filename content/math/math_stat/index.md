@@ -22,8 +22,8 @@ links:
 #   icon_pack: fab
 #   name: Follow
 #   url: https://twitter.com/georgecushen
-url_code: "/math/math_stat/math1.html"
-url_pdf: ""
+url_code: ""
+url_pdf: "/files/math/solution1.pdf"
 url_slides: ""
 url_video: ""
 
