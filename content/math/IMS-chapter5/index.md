@@ -1,5 +1,5 @@
 ---
-title: Exercise in Introduction to Mathematical Statistics 8th edition
+title: Exercise in Introduction to Mathematical Statistics
 summary: Chapter 5 Consistency and Limiting Distributions
 tags:
 - probability
@@ -11,7 +11,7 @@ date: "`r Sys.Date()`"
 active: false
 
 # Optional external URL for project (replaces project detail page).
-external_link: ""
+external_link: "https://minerva.it.manchester.ac.uk/~saralees/statbook2.pdf"
 
 image:
   caption: Photo by rawpixel on Unsplash
@@ -34,6 +34,17 @@ url_video: ""
 #   Otherwise, set `slides = ""`.
 # slides: example
 ---
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+ tex2jax: {
+ inlineMath: [['$', '$'] ],
+ displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+ }
+ });
+</script>
+
 ### 5.1 Convergence in Probability
 - To emphasize the fact that we are working with sequences of random variables, we may place a subscript $n$ on the appropriate random variables; for example, write $X$ as $X_n$.
 - The Weak Law of Large Numbers says that all the mass of the distribution of $\overline{X}_n$ is conversing to $\mu$ as $n\rightarrow\infty$.
