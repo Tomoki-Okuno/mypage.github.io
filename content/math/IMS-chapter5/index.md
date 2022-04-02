@@ -72,7 +72,7 @@ P[|(X_n + Y_n) - (X + Y)| \ge \epsilon] &\le P[|X_n - X| + |Y_n - Y| \ge \epsilo
 $$
 By the hypothesis of the theorem, the last two terms converge to $0$ as $n\rightarrow\infty$, which gives us the desired result.
 
-The sample variance converges in probability to $\sigma^2$, assume further that $E[X_1^4]\lt\infty$, so that $Var(S^2)lt\infty$.
+The sample variance converges in probability to $\sigma^2$, assume further that $E[X_1^4]\lt\infty$, so that $Var(S^2)\lt\infty$.
 $$
 \begin{align*}
 S_n^2 = \frac{1}{n-1}\sum_{i=1}^n (X_i - \overline{X}_n)^2
@@ -104,7 +104,7 @@ Let the random variable $Y_n$ have a distribution that is $Binomial(n, p)$.
 (c) $Y_n/n(1 - Y_n/n) \stackrel{P}{\to} p(1-p$.
 
 **Solution.**  
-(a) Let $X_1,...,X_n \stackrel{iid}{\sim} \text{Bernoulli}(p)$, then we know that $E(X_i)=p$ and $Var(X_i)=1-p\lt\infty$. Thus, $\overline{X}_n \stackrel{P}{\to} p$ by WLLN.  
+(a) Let $X_1,...,X_n \stackrel{iid}{\sim} \text{Bernoulli}(p)$, then we know that $E(X_i)=p$ and $Var(X_i)=1-p\lt\infty$. Thus $\overline{X}_n \stackrel{P}{\to} p$ by WLLN.  
 Since $\sum_{i=1}^n X_i\sim \text{Binomial}(n, p)$ has the same distribution as $Y_n$,
 $$
 Y_n/n = \sum_{i=1}^n X_i/n = \overline{X}_n\stackrel{P}{\to} p.
@@ -123,7 +123,7 @@ $$
 Let $X_1,...,X_n$ be iid random variables with common pdf
 $$
 f(x) = \begin{cases}
-e^{-(x-\theta)} & x>\theta, \:-\inftylt\thetalt\infty\\\\
+e^{-(x-\theta)} & x>\theta, \:-\inftylt\theta\lt\infty\\\\
 0 & \text{elsewhere}.
 \end{cases}
 $$
