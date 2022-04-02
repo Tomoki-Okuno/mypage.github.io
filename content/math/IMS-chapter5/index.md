@@ -34,16 +34,16 @@ url_video: ""
 #   Otherwise, set `slides = ""`.
 # slides: example
 ---
-<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-<script type="text/x-mathjax-config">
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"\gt
+</script\gt
+<script type="text/x-mathjax-config"\gt
  MathJax.Hub.Config({
  tex2jax: {
  inlineMath: [['$', '$'] ],
  displayMath: [ ['$$','$$'], ["\\\\[","\\\\]"] ]
  }
  });
-</script>
+</script\gt
 
 [Textbook (8th Edition)](https://minerva.it.manchester.ac.uk/~saralees/statbook2.pdf)
 
@@ -59,7 +59,7 @@ url_video: ""
 Suppose $X_n\stackrel{P}{\rightarrow} X$ and $Y_n\stackrel{P}{\rightarrow} Y$. 
 Then $X_n + Y_n\stackrel{P}{\rightarrow} X + Y$.
 
-Proof: Let $\epsilon >0$ be given. Using the triangle inequality, we can write
+Proof: Let $\epsilon \gt0$ be given. Using the triangle inequality, we can write
 $$
 |X_n - X| + |Y_n - Y| \ge |(X_n + Y_n) - (X + Y)| \ge \epsilon. 
 $$
@@ -72,8 +72,7 @@ P[|(X_n + Y_n) - (X + Y)| \ge \epsilon] &\le P[|X_n - X| + |Y_n - Y| \ge \epsilo
 $$
 By the hypothesis of the theorem, the last two terms converge to $0$ as $n\rightarrow\infty$, which gives us the desired result.
 
-The sample variance converges in probability to $\sigma^2$, 
-assume further that $E[X_1^4]<\infty$, so that $Var(S^2)<\infty$.
+The sample variance converges in probability to $\sigma^2$, assume further that $E[X_1^4]\gt\infty$, so that $Var(S^2)\gt\infty$.
 $$
 \begin{align*}
 S_n^2 = \frac{1}{n-1}\sum_{i=1}^n (X_i - \overline{X}_n)^2
@@ -90,8 +89,8 @@ Let {$a_n$} be a sequence of real numbers. Hence, we can also say that {$a_n$} i
 $$
 \begin{align*}
 a_n \to a 
-&\Leftrightarrow \forall\epsilon>0, \exists N \in \mathbb{N} \text{ such that }
-|a_n - a|\le \epsilon \text{ for } n > N\\\\
+&\Leftrightarrow \forall\epsilon\gt0, \exists N \in \mathbb{N} \text{ such that }
+|a_n - a|\le \epsilon \text{ for } n \gt N\\\\
 &\Leftrightarrow P(|a_n - a|\le \epsilon) \to 1\:\text{ as } n\to \infty\\\\
 &\Leftrightarrow P(|a_n - a|\gt \epsilon) \to 0\:\text{ as } n\to \infty\\\\
 &\Leftrightarrow a_n \stackrel{P}{\rightarrow} a.
@@ -124,7 +123,7 @@ $$
 Let $X_1,...,X_n$ be iid random variables with common pdf
 $$
 f(x) = \begin{cases}
-e^{-(x-\theta)} & x>\theta, \:-\infty<\theta<\infty\\\\
+e^{-(x-\theta)} & x\gt\theta, \:-\infty<\theta<\infty\\\\
 0 & \text{elsewhere}.
 \end{cases}
 $$
@@ -153,11 +152,11 @@ F_{Y_n}(y) &= 1 - P(Y_n \ge y) \\\\
 \end{cases}
 \end{align*}
 $$
-Let $\epsilon >0$ be given. 
+Let $\epsilon \gt0$ be given. 
 $$
 \begin{align*}
-P(|Y_n - \theta|>\epsilon) &= P(Y_n - \theta>\epsilon)\quad\text{since } Y_n>\theta\\\\
-&= P(Y_n > \theta + \epsilon)\\\\
+P(|Y_n - \theta|\gt\epsilon) &= P(Y_n - \theta\gt\epsilon)\quad\text{since } Y_n\gt\theta\\\\
+&= P(Y_n \gt \theta + \epsilon)\\\\
 &= 1 - F_{Y_n}(\theta + \epsilon)\\\\
 &= e^{-n\epsilon} \to 0 \quad\text{ as } n\to \infty,
 \end{align*}
