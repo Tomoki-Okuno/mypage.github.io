@@ -75,7 +75,7 @@ By the hypothesis of the theorem, the last two terms converge to $0$ as $n\right
 The sample variance converges in probability to $\sigma^2$, assume further that $E[X_1^4]\lt\infty$, so that $Var(S^2)\lt\infty$.
 $$
 \begin{align*}
-S_n^2 = \frac{1}{n-1}\sum_{i=1}^n (X_i - \overline{X}_n)^2
+S_n^2 = \frac{1}{n-1}\sum_{i=1}^n (X_i - \overline{X} _ n)^2
 & = \frac{n}{n-1} \left(\frac{1}{n}\sum_{i=1}^n X_i^2 - \overline{X}_n^2\right)\\\\
 & \stackrel{P}{\rightarrow} 1\cdot[E(X_1^2) - \mu^2] = \sigma^2.
 \end{align*}
