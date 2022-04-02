@@ -35,15 +35,15 @@ url_video: ""
 # slides: example
 ---
 <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"\gt
-</script\gt
-<script type="text/x-mathjax-config"\gt
+</script>
+<script type="text/x-mathjax-config">
  MathJax.Hub.Config({
  tex2jax: {
  inlineMath: [['$', '$'] ],
- displayMath: [ ['$$','$$'], ["\\\\[","\\\\]"] ]
+ displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
  }
  });
-</script\gt
+</script>
 
 [Textbook (8th Edition)](https://minerva.it.manchester.ac.uk/~saralees/statbook2.pdf)
 
