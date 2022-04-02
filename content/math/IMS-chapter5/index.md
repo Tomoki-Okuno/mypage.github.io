@@ -40,7 +40,7 @@ url_video: ""
  MathJax.Hub.Config({
  tex2jax: {
  inlineMath: [['$', '$'] ],
- displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+ displayMath: [ ['$$','$$'], ["\\\\[","\\\\]"] ]
  }
  });
 </script>
@@ -64,12 +64,12 @@ $$
 |X_n - X| + |Y_n - Y| \ge |(X_n + Y_n) - (X + Y)| \ge \epsilon. 
 $$
 Since $P$ is monotone relative to set containment, we have
-$$$$
+$$
 \begin{equation}\begin{aligned}
-P[|(X_n + Y_n) - (X + Y)| \ge \epsilon] &\le P[|X_n - X| + |Y_n - Y| \ge \epsilon] \\
+P[|(X_n + Y_n) - (X + Y)| \ge \epsilon] &\le P[|X_n - X| + |Y_n - Y| \ge \epsilon] \\\\
 &\le P[|X_n - X|\ge \epsilon/2] + P[|Y_n - Y| \ge \epsilon/2].
 \end{aligned}\end{equation}
-$$$$
+$$
 By the hypothesis of the theorem, the last two terms converge to $0$ as $n\rightarrow\infty$, which gives us the desired result.
 
 The sample variance converges in probability to $\sigma^2$, 
@@ -77,7 +77,7 @@ assume further that $E[X_1^4]<\infty$, so that $Var(S^2)<\infty$.
 $$
 \begin{aligned_*}
 S_n^2 = \frac{1}{n-1}\sum_{i=1}^n (X_i - \overline{X}_n)^2
-& = \frac{n}{n-1} \left(\frac{1}{n}\sum_{i=1}^n X_i^2 - \overline{X}_n^2\right)\\
+& = \frac{n}{n-1} \left(\frac{1}{n}\sum_{i=1}^n X_i^2 - \overline{X}_n^2\right)\\\\
 & \stackrel{P}{\rightarrow} 1\cdot[E(X_1^2) - \mu^2] = \sigma^2.
 \end{align_*}
 $$
@@ -91,9 +91,9 @@ $$
 \begin{align*}
 a_n \to a 
 &\Leftrightarrow \forall\epsilon>0, \exists N \in \mathbb{N} \text{ such that }
-|a_n - a|\le \epsilon \text{ for } n > N\\
-&\Leftrightarrow P(|a_n - a|\le \epsilon) \to 1\:\text{ as } n\to \infty\\
-&\Leftrightarrow P(|a_n - a|\gt \epsilon) \to 0\:\text{ as } n\to \infty\\
+|a_n - a|\le \epsilon \text{ for } n > N\\\\
+&\Leftrightarrow P(|a_n - a|\le \epsilon) \to 1\:\text{ as } n\to \infty\\\\
+&\Leftrightarrow P(|a_n - a|\gt \epsilon) \to 0\:\text{ as } n\to \infty\\\\
 &\Leftrightarrow a_n \stackrel{P}{\rightarrow} a.
 \end{align*}
 $$
@@ -124,7 +124,7 @@ $$
 Let $X_1,...,X_n$ be iid random variables with common pdf
 $$
 f(x) = \begin{cases}
-e^{-(x-\theta)} & x>\theta, \:-\infty<\theta<\infty\\
+e^{-(x-\theta)} & x>\theta, \:-\infty<\theta<\infty\\\\
 0 & \text{elsewhere}.
 \end{cases}
 $$
@@ -134,11 +134,11 @@ Prove that $Y_n  \to \theta$ in probability by first obtaining the cdf of $Y_n$.
 **Solution.** 
 $$
 \begin{align*}
-P(Y_n \ge y) &= P(\min\{X_1,...,X_n\} \ge y)\\
-&= P(X_1 \ge y)\cdots P(X_n \ge y)\\
-&= F_X^n(X\ge y) \quad\text{since } X_1,...,X_n \text{ are iid}\\
+P(Y_n \ge y) &= P(\min\{X_1,...,X_n\} \ge y)\\\\
+&= P(X_1 \ge y)\cdots P(X_n \ge y)\\\\
+&= F_X^n(X\ge y) \quad\text{since } X_1,...,X_n \text{ are iid}\\\\
 &= \begin{cases}
-1 & y\le\theta\\
+1 & y\le\theta\\\\
 \left[\int_y^\infty e^{-(t-\theta)}dt\right]^n = e^{-n(y-\theta)}& y\gt\theta.
 \end{cases}
 \end{align*}
@@ -146,9 +146,9 @@ $$
 Hence, the cdf of $Y_n$ is
 $$
 \begin{align*}
-F_{Y_n}(y) &= 1 - P(Y_n \ge y) \\
+F_{Y_n}(y) &= 1 - P(Y_n \ge y) \\\\
 &= \begin{cases}
-0 & y\le\theta\\
+0 & y\le\theta\\\\
 1 - e^{-n(y-\theta)}& y\gt\theta.
 \end{cases}
 \end{align*}
@@ -156,9 +156,9 @@ $$
 Let $\epsilon >0$ be given. 
 $$
 \begin{align*}
-P(|Y_n - \theta|>\epsilon) &= P(Y_n - \theta>\epsilon)\quad\text{since } Y_n>\theta\\
-&= P(Y_n > \theta + \epsilon)\\
-&= 1 - F_{Y_n}(\theta + \epsilon)\\
+P(|Y_n - \theta|>\epsilon) &= P(Y_n - \theta>\epsilon)\quad\text{since } Y_n>\theta\\\\
+&= P(Y_n > \theta + \epsilon)\\\\
+&= 1 - F_{Y_n}(\theta + \epsilon)\\\\
 &= e^{-n\epsilon} \to 0 \quad\text{ as } n\to \infty,
 \end{align*}
 $$
@@ -189,15 +189,15 @@ For Exercise 5.1.7, obtain the mean of $Y_n$. Is $Y_n$ an unbiased estimator of 
 **Solution.** First, we obtain the pdf, $f_{Y_n}(y)$:
 $$
 f_{Y_n}(y) = F_{Y_n}'(y) = \begin{cases}
-0 & y\le\theta\\
+0 & y\le\theta\\\\
 ne^{-n(y-\theta)}& y\gt\theta.
 \end{cases}
 $$
 Hence, the mean of $Y_n$ is
 $$
 \begin{align*}
-E(Y_n) &= n\int_\theta^\infty ye^{-n(y-\theta)}dy\\
-&= \int_0^\infty \left(\frac{t}{n}+\theta\right)e^{-t}dt\quad(t = n(y-\theta))\\
+E(Y_n) &= n\int_\theta^\infty ye^{-n(y-\theta)}dy\\\\
+&= \int_0^\infty \left(\frac{t}{n}+\theta\right)e^{-t}dt\quad(t = n(y-\theta))\\\\
 &= \frac{1}{n} + \theta\quad\text{since} \int_0^\infty te^{-t}dt = \int_0^\infty e^{-t}dt =1.
 \end{align*}
 $$
@@ -216,7 +216,7 @@ $X_n \stackrel{D}{\to} X$ but $X_n \stackrel{P}{\nrightarrow} X$. The converse i
 Let $X$ be a continuous random variable with a pdf $f_X(x)$ that is symmetric at 0. Then it is easy to show that the pdf of $-X$ is also $f_X(x)$. Thus, $X$ and $-X$ have the same distributions. Define the sequence of random variables $X_n$ as
 $$
 X_n = \begin{cases}
- X & \text{if } n \text{ is odd}\\
+ X & \text{if } n \text{ is odd}\\\\
 -X & \text{if } n \text{ is even}.
 \end{cases}
 $$
