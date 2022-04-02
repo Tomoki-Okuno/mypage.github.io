@@ -129,13 +129,13 @@ e^{-(x-\theta)} & x>\theta, \:-\infty\lt\theta\lt\infty\\\\
 0 & \text{elsewhere}.
 \end{cases}
 $$
-This pdf is called the **shifted exponential**. Let $Y_n = \min\{X_1,...,X_n\}$.
+This pdf is called the **shifted exponential**. Let $Y_n = \min\lbraceX_1,...,X_n\rbrace$.
 Prove that $Y_n  \to \theta$ in probability by first obtaining the cdf of $Y_n$.
 
 **Solution.** 
 $$
 \begin{align*}
-P(Y_n \ge y) &= P(\min\{X_1,...,X_n\} \ge y)\\\\
+P(Y_n \ge y) &= P(\min\lbraceX_1,...,X_n\rbrace \ge y)\\\\
 &= P(X_1 \ge y)\cdots P(X_n \ge y)\\\\
 &= F_X^n(X\ge y) \quad\text{since } X_1,...,X_n \text{ are iid}\\\\
 &= \begin{cases}
