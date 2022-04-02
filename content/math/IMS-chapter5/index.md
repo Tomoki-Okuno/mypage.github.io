@@ -37,18 +37,12 @@ url_video: ""
 <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX", "output/HTML-CSS"],
-    tex2jax: {
-      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-      processEscapes: true
-    },
-    "HTML-CSS": { fonts: ["TeX"] }
-  });
-</script>
-<script type="text/javascript" src="path-to-MathJax/MathJax.js">
+ MathJax.Hub.Config({
+ tex2jax: {
+ inlineMath: [['$', '$'] ],
+ displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+ }
+ });
 </script>
 
 [Textbook (8th Edition)](https://minerva.it.manchester.ac.uk/~saralees/statbook2.pdf)
@@ -71,10 +65,8 @@ $$
 $$
 Since $P$ is monotone relative to set containment, we have
 $$
-\begin{equation}\begin{aligned}
 P[|(X_n + Y_n) - (X + Y)| \ge \epsilon] &\le P[|X_n - X| + |Y_n - Y| \ge \epsilon]\\
 &\le P[|X_n - X|\ge \epsilon/2] + P[|Y_n - Y| \ge \epsilon/2].
-\end{aligned}\end{equation}
 $$
 By the hypothesis of the theorem, the last two terms converge to $0$ as $n\rightarrow\infty$, which gives us the desired result.
 
