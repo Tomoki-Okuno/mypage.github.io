@@ -11,7 +11,7 @@ date: "`r Sys.Date()`"
 active: false
 
 # Optional external URL for project (replaces project detail page).
-external_link: "https://minerva.it.manchester.ac.uk/~saralees/statbook2.pdf"
+external_link: ""
 
 image:
   caption: Photo by rawpixel on Unsplash
@@ -44,6 +44,8 @@ url_video: ""
  }
  });
 </script>
+
+[Text book (8th Edition)](https://minerva.it.manchester.ac.uk/~saralees/statbook2.pdf)
 
 ### 5.1 Convergence in Probability
 - To emphasize the fact that we are working with sequences of random variables, we may place a subscript $n$ on the appropriate random variables; for example, write $X$ as $X_n$.
