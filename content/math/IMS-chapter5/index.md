@@ -64,12 +64,12 @@ $$
 |X_n - X| + |Y_n - Y| \ge |(X_n + Y_n) - (X + Y)| \ge \epsilon. 
 $$
 Since $P$ is monotone relative to set containment, we have
-$$
+$$$$
 \begin{equation}\begin{aligned}
-P[|(X_n + Y_n) - (X + Y)| \ge \epsilon] &\le P[|X_n - X| + |Y_n - Y| \ge \epsilon] \\\\
+P[|(X_n + Y_n) - (X + Y)| \ge \epsilon] &\le P[|X_n - X| + |Y_n - Y| \ge \epsilon] \\
 &\le P[|X_n - X|\ge \epsilon/2] + P[|Y_n - Y| \ge \epsilon/2].
 \end{aligned}\end{equation}
-$$
+$$$$
 By the hypothesis of the theorem, the last two terms converge to $0$ as $n\rightarrow\infty$, which gives us the desired result.
 
 The sample variance converges in probability to $\sigma^2$, 
