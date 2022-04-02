@@ -104,7 +104,7 @@ Let the random variable $Y_n$ have a distribution that is $Binomial(n, p)$.
 (c) $Y_n/n(1 - Y_n/n) \stackrel{P}{\to} p(1-p$.
 
 **Solution.**  
-(a) Let $X_1,...,X_n \stackrel{iid}{\sim} \text{Bernoulli}(p)$, then we know that $E(X_i)=p$ and $Var(X_i) = 1 - p \lt \infty$. Thus $\hat{X}_n \stackrel{P}{\to} p$ by WLLN.  
+(a) Let $X_1,...,X_n \stackrel{iid}{\sim} \text{Bernoulli}(p)$, then we know that $E(X_i)=p$ and $Var(X_i) = 1 - p \lt \infty$. Thus $\overline{X}_n \stackrel{P}{\rightarrow} p$ by WLLN.  
 Since $\sum_{i=1}^n X_i\sim \text{Binomial}(n, p)$ has the same distribution as $Y_n$,
 $$
 Y_n/n = \sum_{i=1}^n X_i/n = \overline{X}_n\stackrel{P}{\to} p.
