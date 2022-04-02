@@ -103,7 +103,7 @@ Let the random variable $Y_n$ have a distribution that is $Binomial(n, p)$.
 
 (a) $Y_n/n \stackrel{P}{\to} p$. This result is one form of the weak law of large numbers.  
 (b) $1 - Y_n/n \stackrel{P}{\to} 1-p$.  
-(c) $Y_n/n(1 - Y_n/n) \stackrel{P}{\to} p(1-p$.
+(c) $Y_n/n(1 - Y_n/n) \stackrel{P}{\to} p(1-p)$.
 
 **Solution.**  
 (a) Let $X_1,...,X_n \stackrel{iid}{\sim} \text{Bernoulli}(p)$, then we know that $E(X_i)=p$ and $Var(X_i) = 1 - p \lt \infty$. Thus $\overline{X} _ n \stackrel{P}{\to} p$ by WLLN.  
@@ -174,14 +174,14 @@ $$
 $$
 **Solution.** Let
 $$
-g(x, y) = \sqrt{\frac{x^2}{n_1}+\frac{y^2}{n_2}}\Big/
+g(x, y) = \sqrt{\frac{x}{n_1}+\frac{y}{n_2}}\Big/
 \sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}}.
 $$
-Since $S_1\stackrel{P}{\to} \sigma_1, S_2\stackrel{P}{\to} \sigma_2$ and $g(x, y)$ is continuous at all $(x, y)$,
+Since $S_1^2\stackrel{P}{\to} \sigma_1^2, S_2^2\stackrel{P}{\to} \sigma_2^2$ and $g(x, y)$ is continuous at all $(x, y)$,
 $$
 \sqrt{\frac{S_1^2}{n_1}+\frac{S_2^2}{n_2}}\Big/
 \sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}}
-= g(S_1, S_2) \stackrel{P}{\to} g(\sigma_1, \sigma_2) = 1.
+= g(S_1^2, S_2^2) \stackrel{P}{\to} g(\sigma_1^2, \sigma_2^2) = 1.
 $$
 
 #### 5.1.9.
@@ -211,7 +211,7 @@ $$
 - Often, we say that the distribution of $X$ is the **asymptotic distribution** of the sequence {$X_n$}.
 - While convergence in probability is a way of saying that a sequence of random variables $X_n$ is getting close to another random variable $X$, convergence in distribution is only concerned with the cdfs $F_{X_n}$ and $F_X$.
 - In general, $X_n \stackrel{P}{\to} X \Rightarrow X_n \stackrel{D}{\to} X$. However
-$X_n \stackrel{D}{\to} X$ but $X_n \stackrel{P}{\nrightarrow} X$. The converse is true only if $X$ id degenerate.
+$X_n \stackrel{D}{\to} X$ but $X_n \stackrel{P}{\nrightarrow} X$. The converse is true only if $X$ is degenerate.
 
 #### Simple example that illustrates the difference between two convergences:
 Let $X$ be a continuous random variable with a pdf $f_X(x)$ that is symmetric at 0. Then it is easy to show that the pdf of $-X$ is also $f_X(x)$. Thus, $X$ and $-X$ have the same distributions. Define the sequence of random variables $X_n$ as
