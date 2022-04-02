@@ -45,9 +45,9 @@ url_video: ""
  });
 </script>
 
-[Text book (8th Edition)](https://minerva.it.manchester.ac.uk/~saralees/statbook2.pdf)
+[Textbook (8th Edition)](https://minerva.it.manchester.ac.uk/~saralees/statbook2.pdf)
 
-### 5.1 Convergence in Probability
+## 5.1 Convergence in Probability
 - To emphasize the fact that we are working with sequences of random variables, we may place a subscript $n$ on the appropriate random variables; for example, write $X$ as $X_n$.
 - The Weak Law of Large Numbers says that all the mass of the distribution of $\overline{X}_n$ is conversing to $\mu$ as $n\rightarrow\infty$.
 - The Strong Law of Large NUmbers is a first moment theorem, while the WLLN requires the existance of the second moment.
@@ -55,7 +55,7 @@ url_video: ""
 - The sample mean $\overline{X}_n$ is consistent for $\mu$ by the WLLN.
 - Consistency is a very important property for an estimator to have. It is a poor estimator that does not approach its target as the sample size gets large.
 
-#### Theorem 5.1.2.
+### Theorem 5.1.2.
 Suppose $X_n\stackrel{P}{\rightarrow} X$ and $Y_n\stackrel{P}{\rightarrow} Y$. 
 Then $X_n + Y_n\stackrel{P}{\rightarrow} X + Y$.
 
@@ -75,15 +75,16 @@ By the hypothesis of the theorem, the last two terms converge to $0$ as $n\right
 The sample variance converges in probability to $\sigma^2$, 
 assume further that $E[X_1^4]<\infty$, so that $Var(S^2)<\infty$.
 $$
-\begin{align*}
+\begin{aligned*}
 S_n^2 = \frac{1}{n-1}\sum_{i=1}^n (X_i - \overline{X}_n)^2
 & = \frac{n}{n-1} \left(\frac{1}{n}\sum_{i=1}^n X_i^2 - \overline{X}_n^2\right)\\
 & \stackrel{P}{\rightarrow} 1\cdot[E(X_1^2) - \mu^2] = \sigma^2.
-\end{align*}
+\end{aligned*}
 $$
 
-#### Exercise
-**5.1.1.** Let {$a_n$} be a sequence of real numbers. Hence, we can also say that {$a_n$} is a sequence of constant (degenerate) random variables. Let $a$ be a real number. Show that $a_n \to a$ is equivalent to $a_n \stackrel{P}{\rightarrow} a$.
+### Exercise
+#### 5.1.1.
+Let {$a_n$} be a sequence of real numbers. Hence, we can also say that {$a_n$} is a sequence of constant (degenerate) random variables. Let $a$ be a real number. Show that $a_n \to a$ is equivalent to $a_n \stackrel{P}{\rightarrow} a$.
 
 **Solution.**
 $$
@@ -96,7 +97,8 @@ a_n \to a
 &\Leftrightarrow a_n \stackrel{P}{\rightarrow} a.
 \end{align*}
 $$
-**5.1.2.** Let the random variable $Y_n$ have a distribution that is $Binomial(n, p)$.
+#### 5.1.2.
+Let the random variable $Y_n$ have a distribution that is $Binomial(n, p)$.
 
   (a) $Y_n/n \stackrel{P}{\to} p$. This result is one form of the weak law of large numbers.
   (b) $1 - Y_n/n \stackrel{P}{\to} 1-p$.
@@ -118,7 +120,8 @@ $$
 Y_n/n(1 - Y_n/n) \stackrel{P}{\to} p(1 - p) \quad\text{by (a) and (b)}.
 $$
 
-**5.1.7.** Let $X_1,...,X_n$ be iid random variables with common pdf
+#### 5.1.7.
+Let $X_1,...,X_n$ be iid random variables with common pdf
 $$
 f(x) = \begin{cases}
 e^{-(x-\theta)} & x>\theta, \:-\infty<\theta<\infty\\
@@ -161,7 +164,8 @@ P(|Y_n - \theta|>\epsilon) &= P(Y_n - \theta>\epsilon)\quad\text{since } Y_n>\th
 $$
 which means $Y_n\stackrel{P}{\to} \theta$.
 
-**5.1.8.** Using the assumptions behind the confidence interval given in expression (4.2.9), show that
+#### 5.1.8.
+Using the assumptions behind the confidence interval given in expression (4.2.9), show that
 $$
 \sqrt{\frac{S_1^2}{n_1}+\frac{S_2^2}{n_2}}\Big/
 \sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}}
@@ -179,7 +183,8 @@ $$
 = g(S_1, S_2) \stackrel{P}{\to} g(\sigma_1, \sigma_2) = 1.
 $$
 
-**5.1.9.** For Exercise 5.1.7, obtain the mean of $Y_n$. Is $Y_n$ an unbiased estimator of $\theta$? Obtain an unbiased estimator of $\theta$ based on $Y_n$.
+#### 5.1.9.
+For Exercise 5.1.7, obtain the mean of $Y_n$. Is $Y_n$ an unbiased estimator of $\theta$? Obtain an unbiased estimator of $\theta$ based on $Y_n$.
 
 **Solution.** First, we obtain the pdf, $f_{Y_n}(y)$:
 $$
