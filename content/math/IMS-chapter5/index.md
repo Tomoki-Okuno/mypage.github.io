@@ -65,21 +65,21 @@ $$
 $$
 Since $P$ is monotone relative to set containment, we have
 $$
-\begin{equation}\begin{aligned}
+\begin{align*}
 P[|(X_n + Y_n) - (X + Y)| \ge \epsilon] &\le P[|X_n - X| + |Y_n - Y| \ge \epsilon] \\\\
 &\le P[|X_n - X|\ge \epsilon/2] + P[|Y_n - Y| \ge \epsilon/2].
-\end{aligned}\end{equation}
+\end{align*}
 $$
 By the hypothesis of the theorem, the last two terms converge to $0$ as $n\rightarrow\infty$, which gives us the desired result.
 
 The sample variance converges in probability to $\sigma^2$, 
 assume further that $E[X_1^4]<\infty$, so that $Var(S^2)<\infty$.
 $$
-\begin{aligned_*}
+\begin{align*}
 S_n^2 = \frac{1}{n-1}\sum_{i=1}^n (X_i - \overline{X}_n)^2
 & = \frac{n}{n-1} \left(\frac{1}{n}\sum_{i=1}^n X_i^2 - \overline{X}_n^2\right)\\\\
 & \stackrel{P}{\rightarrow} 1\cdot[E(X_1^2) - \mu^2] = \sigma^2.
-\end{align_*}
+\end{align*}
 $$
 
 ### Exercise
@@ -100,9 +100,9 @@ $$
 #### 5.1.2.
 Let the random variable $Y_n$ have a distribution that is $Binomial(n, p)$.
 
-  (a) $Y_n/n \stackrel{P}{\to} p$. This result is one form of the weak law of large numbers.
-  (b) $1 - Y_n/n \stackrel{P}{\to} 1-p$.
-  (c) $Y_n/n(1 - Y_n/n) \stackrel{P}{\to} p(1-p$.
+(a) $Y_n/n \stackrel{P}{\to} p$. This result is one form of the weak law of large numbers.  
+(b) $1 - Y_n/n \stackrel{P}{\to} 1-p$.  
+(c) $Y_n/n(1 - Y_n/n) \stackrel{P}{\to} p(1-p$.
 
 **Solution.**  
 (a) Let $X_1,...,X_n \stackrel{iid}{\sim} \text{Bernoulli}(p)$, then we know that $E(X_i)=p$ and $Var(X_i)=1-p<\infty$. Thus, $\overline{X}_n \stackrel{P}{\to} p$ by WLLN.  
