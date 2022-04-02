@@ -1,6 +1,6 @@
 ---
 title: Exercise in Introduction to Mathematical Statistics 8th edition
-summary: Chapter 5: Consistency and Limiting Distributions
+summary: Chapter 5 Consistency and Limiting Distributions
 tags:
 - probability
 - distribution
