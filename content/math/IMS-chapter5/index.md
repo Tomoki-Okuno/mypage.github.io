@@ -177,7 +177,7 @@ $$
 g(x, y) = \sqrt{\frac{x^2}{n_1}+\frac{y^2}{n_2}}\Big/
 \sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}}.
 $$
-Since $S_1\stackrel{P}{\to} \sigma_1, S_2\stackrel{P}{\to} \sigma_2$ and $g(x, y)$ is continuous at all $(x, y)$
+Since $S_1\stackrel{P}{\to} \sigma_1, S_2\stackrel{P}{\to} \sigma_2$ and $g(x, y)$ is continuous at all $(x, y)$,
 $$
 \sqrt{\frac{S_1^2}{n_1}+\frac{S_2^2}{n_2}}\Big/
 \sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}}
