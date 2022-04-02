@@ -1,5 +1,5 @@
 ---
-title: Exercise in Introduction to Mathematical Statistics
+title: Exercise in Mathematical Statistics
 summary: Chapter 5 Consistency and Limiting Distributions
 tags:
 - probability
@@ -45,7 +45,7 @@ url_video: ""
  });
 </script>
 
-[Textbook (8th Edition)](https://minerva.it.manchester.ac.uk/~saralees/statbook2.pdf)
+[Introduction to Mathematical Statistics (8th Edition)](https://minerva.it.manchester.ac.uk/~saralees/statbook2.pdf)
 
 ## 5.1 Convergence in Probability
 - To emphasize the fact that we are working with sequences of random variables, we may place a subscript $n$ on the appropriate random variables; for example, write $X$ as $X_n$.
@@ -66,8 +66,10 @@ $$
 Since $P$ is monotone relative to set containment, we have
 $$
 \begin{align*}
-P[|(X_n + Y_n) - (X + Y)| \ge \epsilon] &\le P[|X_n - X| + |Y_n - Y| \ge \epsilon] \\\\
-&\le P[|X_n - X|\ge \epsilon/2] + P[|Y_n - Y| \ge \epsilon/2].
+P[|(X_n + Y_n) - (X + Y)| \ge \epsilon]
+\le & P[|X_n - X| + |Y_n - Y| \ge \epsilon] \\\\
+\le & P[|X_n - X|\ge \epsilon/2] \\\\ 
+& + P[|Y_n - Y| \ge \epsilon/2].
 \end{align*}
 $$
 By the hypothesis of the theorem, the last two terms converge to $0$ as $n\rightarrow\infty$, which gives us the desired result.
