@@ -234,7 +234,7 @@ $$
 \begin{align*}
 F_{Y_1}(y)  &=
 \begin{cases}
-0 & y\le\theta\\
+0 & y\le\theta \\\\
 1 - e^{-n(y-\theta)}& y\gt\theta.
 \end{cases}
 \end{align*}
@@ -242,11 +242,11 @@ $$
 Thus,
 $$
 \begin{align*}
-F_{Z_n}(z) = P(Z\le z) &= P(n(Y_1 − \theta)\le z)\\
-&= P(Y_1\le z/n + \theta)\\
+F_{Z_n}(z) = P(Z\le z) &= P(n(Y_1 − \theta)\le z)\\\\
+&= P(Y_1\le z/n + \theta)\\\\
 &=
 \begin{cases}
-0 & z\le 0\\
+0 & z\le 0\\\\
 1 - e^{-z}& z\gt 0
 \end{cases}
 \end{align*}
@@ -264,18 +264,18 @@ $$
 and obtain
 $$
 \begin{align*}
-F_{Y_n}(y) &= P(\max \lbrace X_1,...,X_n \rbrace\le y) \\
+F_{Y_n}(y) &= P(\max \lbrace X_1,...,X_n \rbrace\le y) \\\\
 &= [P(X\le y)]^n = [F_X(y)]^n.
 \end{align*}
 $$
 Hence
 $$
 \begin{align*}
-F_{Z_n}(z) &= P(n[1 − F(Y_n)] \le z) \\
-&= P[F(Y_n) \ge 1 - z/n]\\
-&= P[Y_n \ge F_X^{-1}(1 - z/n)]\quad\text{since } Y_n \text{ is nondecreasing}\\
-&= 1 - F_{Y_n}\lbrace F_X^{-1}(1 - z/n)\rbrace\\
-&= 1 - [F_X\lbrace F_X^{-1}(1 - z/n)\rbrace]^n\\
+F_{Z_n}(z) &= P(n[1 − F(Y_n)] \le z) \\\\
+&= P[F(Y_n) \ge 1 - z/n]\\\\
+&= P[Y_n \ge F_X^{-1}(1 - z/n)]\quad\text{since } Y_n \text{ is nondecreasing}\\\\
+&= 1 - F_{Y_n}\lbrace F_X^{-1}(1 - z/n)\rbrace\\\\
+&= 1 - [F_X\lbrace F_X^{-1}(1 - z/n)\rbrace]^n\\\\
 &= 1 - (1 - z/n)^n \to 1 - e^{-z} \text{ as } n\to\infty,
 \end{align*}
 $$
