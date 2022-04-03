@@ -1,5 +1,5 @@
 ---
-title: Exercise in Mathematical Statistics
+title: Exercise in Mathematical Statistics 1
 summary: Chapter 1 Probability and Distributions
 tags:
 - probability
@@ -47,11 +47,11 @@ url_video: ""
 
 There were my solutions to some of the problems in the text book called 'Introduction to Mathematical Statistics'. I worked on some of them in class Biostatistics 202A: Mathematical Statistics. The reason why I share my solutions is that not all answers are available publicly and some of the answers are often incorrect or unwise.
 
-## 1.1 Convergence in Probability
+## 1.1 Introduction
+## 1.2 Sets
 
-**Example 1.2.25**  
+### Example 1.2.9
 If $C=\{(x_1, x_2, \ldots, x_n): 0\le x_1\le x_2\le\cdots\le x_{n-1}\le x_n\le 1\}$, then
-
 $$
 \begin{align*}
 Q(C)&=\int_0^1\int_0^{x_n}\cdots\int_0^{x_3}\int_0^{x_2}dx_1dx_2\cdots dx_{n-1}dx_{n}\\

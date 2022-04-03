@@ -1,5 +1,5 @@
 ---
-title: Exercise in Mathematical Statistics
+title: Exercise in Mathematical Statistics 5
 summary: Chapter 5 Consistency and Limiting Distributions
 tags:
 - probability
