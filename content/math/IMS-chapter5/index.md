@@ -93,11 +93,12 @@ $$
 a_n \to a 
 &\Leftrightarrow \forall\epsilon \gt 0, \exists N \in \mathbb{N} \text{ such that }
 |a_n - a|\le \epsilon \text{ for } n \gt N\\\\
-&\Leftrightarrow P(|a_n - a|\le \epsilon) \to 1\:\text{ as } n\to \infty\\\\
-&\Leftrightarrow P(|a_n - a|\gt \epsilon) \to 0\:\text{ as } n\to \infty\\\\
+&\Leftrightarrow P(|a_n - a|\le \epsilon) \to 1 \text{  as } n\to \infty\\\\
+&\Leftrightarrow P(|a_n - a|\gt \epsilon) \to 0 \text{  as } n\to \infty\\\\
 &\Leftrightarrow a_n \stackrel{P}{\rightarrow} a.
 \end{align*}
 $$
+
 #### 5.1.2.
 Let the random variable $Y_n$ have a distribution that is $Binomial(n, p)$.
 
@@ -125,7 +126,7 @@ $$
 Let $X_1,...,X_n$ be iid random variables with common pdf
 $$
 f(x) = \begin{cases}
-e^{-(x-\theta)} & x>\theta, \:-\infty\lt\theta\lt\infty\\\\
+e^{-(x-\theta)} & x>\theta, -\infty\lt\theta\lt\infty\\\\
 0 & \text{elsewhere}.
 \end{cases}
 $$
@@ -223,7 +224,60 @@ X_n = \begin{cases}
 $$
 Clearly, $F_{X_n}=F_{X}$ for all $x$ in the support of $X$, so that $X_n \stackrel{D}{\rightarrow}X$. 
 On the other hand, $X$ does not get close to $X$. In particular, $X_n \stackrel{P}{\nrightarrow} X$ in probability.
+
+### Exercise
+#### 5.2.2.
+Let {$Y_1$} denote the minimum of a random sample of size $n$ from a distribution that has pdf $f(x) = e^{−(x−\theta)}, \theta\lt x \lt \infty$, zero elsewhere. Let $Z_n = n(Y_1 − \theta)$. Investigate the limiting (asymptotic) distribution of $Z_n$.
+
+**Solution.** By Exercise 5.1.7,
 $$
 \begin{align*}
+F_{Y_1}(y)  &=
+\begin{cases}
+0 & y\le\theta\\
+1 - e^{-n(y-\theta)}& y\gt\theta.
+\end{cases}
 \end{align*}
 $$
+Thus,
+$$
+\begin{align*}
+F_{Z_n}(z) = P(Z\le z) &= P(n(Y_1 − \theta)\le z)\\
+&= P(Y_1\le z/n + \theta)\\
+&=
+\begin{cases}
+0 & z\le 0\\
+1 - e^{-z}& z\gt 0
+\end{cases}
+\end{align*}
+$$
+which holds for $\forall n$. Therefore $\lbrace Z_n \rbrace$ converges in distribution to an exponatial distribution with mean $\lambda = 1$, or $Z_n\stackrel{D}{\rightarrow} \text{Exp(1)}$.
+
+#### 5.2.3.
+Let {$Y_n$} denote the maximum of a random sample of size $n$ from a distribution of the continuous type that has cdf $F(x)$ and pdf $f(x) = F'(x)$. Find the limiting distribution of $Z_n = n[1 − F(Y_n)]$.
+
+**Solution.**
+We can write
+$$
+Y_n = \max \lbrace X_1,...,X_n \rbrace
+$$
+and obtain
+$$
+\begin{align*}
+F_{Y_n}(y) &= P(\max \lbrace X_1,...,X_n \rbrace\le y) \\
+&= [P(X\le y)]^n = [F_X(y)]^n.
+\end{align*}
+$$
+Hence
+$$
+\begin{align*}
+F_{Z_n}(z) &= P(n[1 − F(Y_n)] \le z) \\
+&= P[F(Y_n) \ge 1 - z/n]\\
+&= P[Y_n \ge F_X^{-1}(1 - z/n)]\quad\text{since } Y_n \text{ is nondecreasing}\\
+&= 1 - F_{Y_n}\lbrace F_X^{-1}(1 - z/n)\rbrace\\
+&= 1 - [F_X\lbrace F_X^{-1}(1 - z/n)\rbrace]^n\\
+&= 1 - (1 - z/n)^n \to 1 - e^{-z} \text{ as } n\to\infty,
+\end{align*}
+$$
+which means that $Z_n \stackrel{D}{\to} \text{Exp}(1)$.
+
