@@ -83,11 +83,10 @@ S_n^2 = \frac{1}{n-1}\sum_{i=1}^n (X_i - \overline{X} _ n)^2
 \end{align*}
 $$
 
-### Exercise
-#### 5.1.1.
+### Exercise 5.1.1.
 Let {$a_n$} be a sequence of real numbers. Hence, we can also say that {$a_n$} is a sequence of constant (degenerate) random variables. Let $a$ be a real number. Show that $a_n \to a$ is equivalent to $a_n \stackrel{P}{\rightarrow} a$.
 
-**Solution.**
+#### Solution.
 $$
 \begin{align*}
 a_n \to a 
@@ -99,14 +98,14 @@ a_n \to a
 \end{align*}
 $$
 
-#### 5.1.2.
+### Exercise 5.1.2.
 Let the random variable $Y_n$ have a distribution that is $Binomial(n, p)$.
 
 (a) $Y_n/n \stackrel{P}{\to} p$. This result is one form of the weak law of large numbers.  
 (b) $1 - Y_n/n \stackrel{P}{\to} 1-p$.  
 (c) $Y_n/n(1 - Y_n/n) \stackrel{P}{\to} p(1-p)$.
 
-**Solution.**  
+#### Solution.  
 (a) Let $X_1,...,X_n \stackrel{iid}{\sim} \text{Bernoulli}(p)$, then we know that $E(X_i)=p$ and $Var(X_i) = 1 - p \lt \infty$. Thus $\overline{X} _ n \stackrel{P}{\to} p$ by WLLN.  
 Since $\sum_{i=1}^n X_i\sim \text{Binomial}(n, p)$ has the same distribution as $Y_n$,
 $$
@@ -122,7 +121,7 @@ $$
 Y_n/n(1 - Y_n/n) \stackrel{P}{\to} p(1 - p) \quad\text{by (a) and (b)}.
 $$
 
-#### 5.1.7.
+### Exercise 5.1.7.
 Let $X_1,...,X_n$ be iid random variables with common pdf
 $$
 f(x) = \begin{cases}
@@ -133,7 +132,7 @@ $$
 This pdf is called the **shifted exponential**. Let $Y_n = \min\lbrace X_1,...,X_n \rbrace$.
 Prove that $Y_n  \to \theta$ in probability by first obtaining the cdf of $Y_n$.
 
-**Solution.** 
+#### Solution. 
 $$
 \begin{align*}
 P(Y_n \ge y) &= P(\min\lbrace X_1,...,X_n \rbrace \ge y)\\\\
@@ -166,14 +165,15 @@ P(|Y_n - \theta| \gt \epsilon) &= P(Y_n - \theta \gt \epsilon)\quad\text{since }
 $$
 which means $Y_n\stackrel{P}{\to} \theta$.
 
-#### 5.1.8.
+### Exercise 5.1.8.
 Using the assumptions behind the confidence interval given in expression (4.2.9), show that
 $$
 \sqrt{\frac{S_1^2}{n_1}+\frac{S_2^2}{n_2}}\Big/
 \sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}}
 \stackrel{P}{\to} 1
 $$
-**Solution.** Let
+#### Solution.
+Let
 $$
 g(x, y) = \sqrt{\frac{x}{n_1}+\frac{y}{n_2}}\Big/
 \sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}}.
@@ -185,10 +185,11 @@ $$
 = g(S_1^2, S_2^2) \stackrel{P}{\to} g(\sigma_1^2, \sigma_2^2) = 1.
 $$
 
-#### 5.1.9.
+### Exercise 5.1.9.
 For Exercise 5.1.7, obtain the mean of $Y_n$. Is $Y_n$ an unbiased estimator of $\theta$? Obtain an unbiased estimator of $\theta$ based on $Y_n$.
 
-**Solution.** First, we obtain the pdf, $f_{Y_n}(y)$:
+#### Solution. 
+First, we obtain the pdf, $f_{Y_n}(y)$:
 $$
 f_{Y_n}(y) = F_{Y_n}'(y) = \begin{cases}
 0 & y\le\theta\\\\
@@ -225,11 +226,11 @@ $$
 Clearly, $F_{X_n}=F_{X}$ for all $x$ in the support of $X$, so that $X_n \stackrel{D}{\rightarrow}X$. 
 On the other hand, $X$ does not get close to $X$. In particular, $X_n \stackrel{P}{\nrightarrow} X$ in probability.
 
-### Exercise
-#### 5.2.2.
+### Exercise 5.2.2.
 Let {$Y_1$} denote the minimum of a random sample of size $n$ from a distribution that has pdf $f(x) = e^{−(x−\theta)}, \theta\lt x \lt \infty$, zero elsewhere. Let $Z_n = n(Y_1 − \theta)$. Investigate the limiting (asymptotic) distribution of $Z_n$.
 
-**Solution.** By Exercise 5.1.7,
+#### Solution.
+By Exercise 5.1.7,
 $$
 \begin{align*}
 F_{Y_1}(y)  &=
@@ -253,10 +254,10 @@ F_{Z_n}(z) = P(Z\le z) &= P(n(Y_1 − \theta)\le z)\\\\
 $$
 which holds for $\forall n$. Therefore $\lbrace Z_n \rbrace$ converges in distribution to an exponatial distribution with mean $\lambda = 1$, or $Z_n\stackrel{D}{\rightarrow} \text{Exp(1)}$.
 
-#### 5.2.3.
+### Exercise 5.2.3.
 Let {$Y_n$} denote the maximum of a random sample of size $n$ from a distribution of the continuous type that has cdf $F(x)$ and pdf $f(x) = F'(x)$. Find the limiting distribution of $Z_n = n[1 − F(Y_n)]$.
 
-**Solution.**
+#### Solution.
 We can write
 $$
 Y_n = \max \lbrace X_1,...,X_n \rbrace
