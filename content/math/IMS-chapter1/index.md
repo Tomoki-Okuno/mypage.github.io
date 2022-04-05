@@ -63,3 +63,5 @@ Q(C)&=\int_0^1\int_0^{x_n}\cdots\int_0^{x_3}\int_0^{x_2}dx_1dx_2\cdots dx_{n-1}d
 &=\int_0^1\frac{x_n^{n-1}}{(n-1)!} dx_{n}=\frac{1}{n!}\Big[ x_n^n\Big]_0^1=\frac{1}{n!}.
 \end{align*}
 $$
+
+(In progress)

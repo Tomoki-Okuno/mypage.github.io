@@ -50,7 +50,7 @@ url_video: ""
 ## 5.1 Convergence in Probability
 - To emphasize the fact that we are working with sequences of random variables, we may place a subscript $n$ on the appropriate random variables; for example, write $X$ as $X_n$.
 - The Weak Law of Large Numbers says that all the mass of the distribution of $\overline{X}_n$ is conversing to $\mu$ as $n\rightarrow\infty$.
-- The Strong Law of Large NUmbers is a first moment theorem, while the WLLN requires the existance of the second moment.
+- The Strong Law of Large Numbers is a first moment theorem, while the WLLN requires the existance of the second moment.
 - The sample mean $\overline{X}$ and the sample variance $S^2$ are unbiased for $\mu$ and $\sigma^2$.
 - The sample mean $\overline{X}_n$ is consistent for $\mu$ by the WLLN.
 - Consistency is a very important property for an estimator to have. It is a poor estimator that does not approach its target as the sample size gets large.

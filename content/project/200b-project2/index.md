@@ -35,4 +35,4 @@ url_video: ""
 ---
 This project was the final assignment for Biostatistics 200B: Methods in Biostatistics B in Winter Quarter 2022.
 
-The question was "Do spike protein IgG levels vary by peak COVID-19 disease severity?" To answer this question, I  fit a two-way ANCOVA model with peak disease severity and gender as the factors and days since symptom onset (daysPSO) as a covariate, and get adjusted means and test for differences among the disease severity categories using a multiple comparison method such as Tukey HSD. The dependent variable is spike IgG (SpikeIgG), which is positively skewed.
+The question was "Do spike protein IgG levels vary by peak COVID-19 disease severity?" To answer this question, I  fit a two-way ANCOVA model with peak disease severity and gender as the factors and days since symptom onset as a covariate, and get adjusted means and test for differences among the disease severity categories using a multiple comparison method. The dependent variable is spike protein IgG, which is positively skewed.
