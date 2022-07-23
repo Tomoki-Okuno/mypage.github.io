@@ -34,15 +34,5 @@ url_video: ""
 #   Otherwise, set `slides = ""`.
 # slides: example
 ---
-# <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-# </script>
-# <script type="text/x-mathjax-config">
-#  MathJax.Hub.Config({
-#  tex2jax: {
-#  inlineMath: [['$', '$'] ],
-#  displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
-#  }
-#  });
-# </script>
 
 You can see my solutions to most of the exercises in a famous stat book 'Introduction to Mathematical Statistics'. 
