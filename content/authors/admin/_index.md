@@ -19,6 +19,7 @@ bio: My research interests include longevity, that is, extending healthy lifespa
 # Interests to show in About widget
 interests:
 - Longevity
+- Optimization
 - Machine Learning
 - Causal Inference
 
