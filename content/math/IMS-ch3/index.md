@@ -3,10 +3,15 @@ title: Exercises in Introduction to Mathematical Statistics
 summary: Chapter 3 Some Special Distributions
 tags:
 - binomial
-- negative ninomial
+- negative binomial
 - poisson
+- hypergeometric
 - chi-square
 - normal
+- geometric distribution
+- beta distribution
+- exponential distribution
+- gamma distribution
 - t-distribution
 - F-distribution
 
