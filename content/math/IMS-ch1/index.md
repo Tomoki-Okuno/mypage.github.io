@@ -3,8 +3,11 @@ title: Exercises in Introduction to Mathematical Statistics
 summary: Chapter 1 Probability and Distributions
 tags:
 - probability
-- distribution
-- statistics
+- set function
+- conditoinal probability
+- discrete variable
+- continuous variable
+
 date: "`r Sys.Date()`"
 
 # Activate this widget? true/false

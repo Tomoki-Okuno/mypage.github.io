@@ -2,9 +2,14 @@
 title: Exercises in Introduction to Mathematical Statistics
 summary: Chapter 2 Multivariate Distributions
 tags:
-- probability
 - distribution
-- statistics
+- transformation
+- jacobian
+- independent
+- expectation
+- variance
+- correlation
+
 date: "`r Sys.Date()`"
 
 # Activate this widget? true/false
