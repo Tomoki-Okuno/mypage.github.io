@@ -52,7 +52,7 @@ social:
 #   link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
 - icon: github
   icon_pack: fab
-  link: https://github.com/tomokiokuno0528
+  link: https://github.com/Tomoki-Okuno
 - icon: linkedin
   icon_pack: fab
   link: https://www.linkedin.com/in/tomoki-okuno-a06aa0185/
