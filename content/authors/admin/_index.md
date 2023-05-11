@@ -26,9 +26,12 @@ interests:
 # Education to show in About widget
 education:
   courses:
+  - course: PhD in Biostatistics
+    institution: University of California, Los Angeles
+    year: 2023−Present
   - course: MS in Biostatistics
     institution: University of California, Los Angeles
-    year: 2021−Present
+    year: 2021−2023
   - course: MS in Informatics
     institution: Kyoto University, Japan
     year: 2011−2013
