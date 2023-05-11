@@ -22,6 +22,7 @@ interests:
 - Optimization
 - Machine Learning
 - Causal Inference
+- Linear Algebra
 
 # Education to show in About widget
 education:
