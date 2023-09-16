@@ -18,8 +18,6 @@ links:
 #   name: Follow
 #   url: https://twitter.com/georgecushen
 url_pdf: "/files/projects/250A_review.pdf"
-url_html: "/files/projects/250B_review.pdf"
-url_pdf: "/files/projects/250C_review.pdf"
 url_html: ""
 url_slides: ""
 url_video: ""
