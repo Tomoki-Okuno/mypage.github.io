@@ -17,8 +17,9 @@ links:
 #   icon_pack: fab
 #   name: Follow
 #   url: https://twitter.com/georgecushen
-url_code: "/files/projects/250A_review.pdf"
-url_code: "/files/projects/250B_review.pdf"
+url_pdf: "/files/projects/250A_review.pdf"
+url_pdf: "/files/projects/250B_review.pdf"
+url_pdf: "/files/projects/250C_review.pdf"
 url_html: ""
 url_slides: ""
 url_video: ""
