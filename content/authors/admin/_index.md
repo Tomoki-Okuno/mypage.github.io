@@ -6,7 +6,7 @@ title: Tomoki Okuno
 superuser: true
 
 # Role/position/tagline
-role: PhD student in Biostatistics
+role: MS student in Biostatistics
 
 # Organizations/Affiliations to show in About widget
 organizations:
