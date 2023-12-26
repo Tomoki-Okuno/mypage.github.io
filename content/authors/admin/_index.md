@@ -28,16 +28,16 @@ education:
   courses:
   - course: PhD in Biostatistics
     institution: University of California, Los Angeles
-    year: 2023−Present
+    year, 2023−Present
   - course: MS in Biostatistics
     institution: University of California, Los Angeles
-    year: 2021−2023
+    year, 2023
   - course: MS in Informatics
     institution: Kyoto University, Japan
-    year: 2011−2013
+    year, 2013
   - course: BE in Informatics
     institution: Kyoto University, Japan
-    year: 2007−2011
+    year, 2011
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
