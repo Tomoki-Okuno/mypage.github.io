@@ -18,10 +18,9 @@ bio: My research interests include longevity, that is, extending healthy lifespa
 
 # Interests to show in About widget
 interests:
-- Longevity
+- Personalized Medicine (Longevity)
+- Joint Models for Longitudinal and Survival Data
 - Optimization
-- Longitudinal data
-- Causal Inference
 - Linear Algebra
 
 # Education to show in About widget
