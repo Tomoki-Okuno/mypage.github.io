@@ -46,9 +46,9 @@ tags: []
 featured: true
 
 # Custom links (uncomment lines below)
-# links:
-# - name: Custom Link
-#   url: https://diabetesjournals.org/diabetes/article/72/12/1864/153649/Association-of-Both-Short-term-and-Long-term
+links:
+- name: Custom Link
+  url: https://diabetesjournals.org/diabetes/article/72/12/1864/153649/Association-of-Both-Short-term-and-Long-term
 
 url_pdf: ''
 url_code: ''
