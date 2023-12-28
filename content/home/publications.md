@@ -10,10 +10,10 @@ headless: true
 weight: 90
 
 # Activate this widget? true/false
-active: false
+active: true
 
 title: Recent Publications
-subtitle: ''
+subtitle: 'Association of Both Short-term and Long-term Glycemic Variability With the Development of Microalbuminuria in the ACCORD Trial'
 
 content:
   # Filter on criteria
