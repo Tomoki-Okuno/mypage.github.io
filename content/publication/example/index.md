@@ -1,38 +1,42 @@
 ---
-title: "An example conference paper"
+title: "Association of Both Short-term and Long-term Glycemic Variability With the Development of Microalbuminuria in the ACCORD Trial"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here 
 # and it will be replaced with their full name and linked to their profile.
 authors:
 - admin
-- Robert Ford
+- Hua Zhou
+- Juraj Koska
+- Peter Reaven
+- Jin J. Zhou 
+
 
 # Author notes (optional)
-author_notes:
-- "Equal contribution"
-- "Equal contribution"
+# author_notes:
+# - "Equal contribution"
+# - "Equal contribution"
 
-date: "2013-07-01T00:00:00Z"
+date: "2023-12-01T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2017-01-01T00:00:00Z"
+publishDate: "2023-12-01T00:00:00Z"
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["1"]
+publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: In *Wowchemy Conference*
-publication_short: In *ICW*
+publication: In *Diabetes*
+publication_short: In *Diabetes*
 
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+abstract: Both long- and short-term glycemic variability have been associated with incident diabetes complications. We evaluated their relative and potential additive effects on incident renal complications in the Action to Control Cardiovascular Risk in Diabetes trial. A marker of short-term glycemic variability, 1,5-anhydroglucitol (1,5-AG), was measured in 4,000 random 12-month postrandomization plasma samples (when hemoglobin A1c [HbA1c] was stable). Visit-to-visit fasting plasma glucose coefficient of variation (CV-FPG) was determined from 4 months postrandomization until the end point of microalbuminuria or macroalbuminuria. Using Cox proportional hazards models, high CV-FPG and low 1,5-AG were independently associated with microalbuminuria after adjusting for clinical risk factors. However, only the CV-FPG association remained after additional adjustment for average HbA1c. Only CV-FPG was a significant risk factor for macroalbuminuria. This post hoc analysis indicates that long-term rather than short-term glycemic variability better predicts the risk of renal disease in type 2 diabetes.
 
 # Summary. An optional shortened abstract.
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+summary: ""
 
 tags: []
 
@@ -42,7 +46,7 @@ featured: true
 # Custom links (uncomment lines below)
 # links:
 # - name: Custom Link
-#   url: http://example.org
+#   url: https://diabetesjournals.org/diabetes/article/72/12/1864/153649/Association-of-Both-Short-term-and-Long-term
 
 url_pdf: ''
 url_code: ''
@@ -66,22 +70,22 @@ image:
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
 projects:
-- example
+- Diabetes01
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
-slides: example
+slides: ""
 ---
 
-{{% callout note %}}
-Click the *Cite* button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-{{% /callout %}}
+# {{% callout note %}}
+# Click the *Cite* button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+# {{% /callout %}}
 
-{{% callout note %}}
-Create your slides in Markdown - click the *Slides* button to check out the example.
-{{% /callout %}}
+# {{% callout note %}}
+# Create your slides in Markdown - click the *Slides* button to check out the example.
+# {{% /callout %}}
 
-Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/).
+# Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/).
