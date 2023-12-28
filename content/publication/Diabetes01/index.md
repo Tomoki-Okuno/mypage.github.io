@@ -6,6 +6,8 @@ title: "Association of Both Short-term and Long-term Glycemic Variability With t
 # and it will be replaced with their full name and linked to their profile.
 authors:
 - admin
+- Arin Vansomphone
+- Elyse Zhang
 - Hua Zhou
 - Juraj Koska
 - Peter Reaven
