@@ -6,11 +6,11 @@ title: "Assessing Patterns of Continuous Glucose Monitoring Use and Metrics of G
 # and it will be replaced with their full name and linked to their profile.
 authors:
 - admin
-- Macwan, Sharon A
-- Miller, Donald 
-- Norman, Gregory
-- Reaven, Peter 
-- Zhou, Jin J
+- Sharon A Macwan
+- Donald Miller 
+- Gregory Norman
+- Peter Reaven 
+- Jin J Zhou
 
 
 # Author notes (optional)
