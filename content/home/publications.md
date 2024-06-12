@@ -13,7 +13,7 @@ weight: 90
 active: true
 
 title: Recent Publications
-subtitle: 'Association of Both Short-term and Long-term Glycemic Variability With the Development of Microalbuminuria in the ACCORD Trial'
+subtitle: 'Assessing Patterns of Continuous Glucose Monitoring Use and Metrics of Glycemic Control in Type 1 Diabetes and Type 2 Diabetes Patients in the Veterans Health Care System: Integrating Continuous Glucose Monitoring Device Data with Electronic Health Records Data'
 
 content:
   # Filter on criteria
