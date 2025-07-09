@@ -6,7 +6,7 @@ title: Tomoki Okuno
 superuser: true
 
 # Role/position/tagline
-role: PhD student in Biostatistics
+role: PhD candidate in Biostatistics
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -19,9 +19,9 @@ bio: My research interests include longevity, that is, extending healthy lifespa
 # Interests to show in About widget
 interests:
 - Personalized Medicine (Longevity)
-- Joint Models for Longitudinal and Survival Data
 - Dynamic Prediction
-- Optimization
+- High-dimensional statistics
+- Causal Inference
 
 # Education to show in About widget
 education:
