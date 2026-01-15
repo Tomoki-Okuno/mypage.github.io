@@ -18,8 +18,12 @@ bio: My research interests include longevity, that is, extending healthy lifespa
 
 # Interests to show in About widget
 interests:
+<<<<<<< HEAD
 - Double machine learning
 - Prediction-powered inference
+=======
+- Semiparametric Theory (DML, PPI)
+>>>>>>> f31564bf466c55d14c7550c913b50f6c501e046c
 - Causal inference
 - High-dimensional statistics
 - Longevity
