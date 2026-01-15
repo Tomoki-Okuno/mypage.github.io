@@ -18,10 +18,11 @@ bio: My research interests include longevity, that is, extending healthy lifespa
 
 # Interests to show in About widget
 interests:
-- Personalized Medicine (Longevity)
-- Dynamic Prediction
+- Double machine learning
+- Prediction-powered inference
+- Causal inference
 - High-dimensional statistics
-- Causal Inference
+- Longevity
 
 # Education to show in About widget
 education:
@@ -79,6 +80,7 @@ highlight_name: true
 # {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé (TBD){{< /staticref >}}.
 ---
 
-I am a PhD Biostatistics student and a graduate student researcher at UCLA. My current research focuses on joint models for longitudinal and time-to-event data for personalized medicine, i.e., predicting patients' survival probabilities that are dynamically updated as additional information is recorded. My long-term goal is to contribute to realizing an extended healthy lifespan in Japan, as both a biostatistician and a business developer. In addition to my academic pursuits, I am into keeping fit to live up to the age of 150.
+I am a PhD Biostatistics candidate and a graduate student researcher at UCLA.
+My current research focuses on extending the state-of-art semiparamertic methods such as double machine learning (DML) and prediction-powered inference (PPI) to new functionals for personalized medicine.
 
 This picture was drawn by my wife, an illustrator (her [instagram](https://www.instagram.com/satoko_artwork/)).
